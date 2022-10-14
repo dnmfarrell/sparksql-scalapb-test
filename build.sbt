@@ -1,14 +1,13 @@
 // SparkSQL can work with a Spark built with Scala 2.11 too.
 
-scalaVersion := "2.12.10"
+scalaVersion := "2.12.15"
 
 version := "1.0.0"
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "3.1.1" % "provided",
-  "org.apache.spark" %% "spark-sql" % "3.1.1" % "provided",
-  //"com.thesamet.scalapb" %% "sparksql32-scalapb0_11" % "1.0.0"
-  "com.thesamet.scalapb" %% "sparksql-scalapb" % "0.11.0"
+  "org.apache.spark" %% "spark-core" % "3.2.1" % "provided",
+  "org.apache.spark" %% "spark-sql" % "3.2.1" % "provided",
+  "com.thesamet.scalapb" %% "sparksql32-scalapb0_11" % "1.0.1"
 )
 
 // Hadoop contains an old protobuf runtime that is not binary compatible

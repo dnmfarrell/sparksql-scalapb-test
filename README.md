@@ -17,8 +17,6 @@ Test project for SparkSQL and ScalaPB.
 2. Submit the job to your cluster:
 
    ```
-   /path/to/spark/bin/spark-submit \
-     --jars . \
-     --class myexample.RunDemo \
+   spark-submit --jars . --class myexample.RunDemo \
      target/scala-2.12/sparksql-scalapb-test-assembly-1.0.0.jar
    ```

@@ -3,8 +3,12 @@ syntax = "proto2";
 option java_package = "com.example.protos";
 
 message Large {
-  optional int64 i = 1;
+  optional int64 x = 1;
 }
 message Small {
-  optional int32 i = 1;
+  optional int32 x = 1;
+}
+message Point {
+  optional int32 x = 1;
+  optional int32 y = 2;
 }
